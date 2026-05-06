@@ -3,3 +3,4 @@ export default function Projects(){
     <div className="p-10 text-3xl font-bold">Projects page</div>
     
     </>)}
+    
