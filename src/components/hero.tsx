@@ -17,8 +17,7 @@ export default function Hero() {
         </h1>
 
         <p className="mx-auto max-w-2xl text-lg text-gray-400 md:text-xl">
-          Full Stack Developer building modern web experiences
-          using Next.js, MERN Stack and clean UI design.
+          I build end-to-end web applications with Next.js, React, Node.js, Express, Postgresql, and MongoDB, with a particular interest in backend systems and performance.
         </p>
       </div>
 
