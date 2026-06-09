@@ -221,7 +221,7 @@ export default function ContactPage() {
             </a>
 
             <a
-              href="/resume.pdf"
+              href="/Shreyansh_rai_resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="
