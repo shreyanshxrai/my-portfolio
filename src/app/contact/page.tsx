@@ -157,7 +157,7 @@ export default function ContactPage() {
 
           <div className="space-y-4">
             <a
-              href="mailto:shreyanshtalks@gmail.com"
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=shreyanshtalks@gmail.com"
               className="
                 flex
                 items-center
