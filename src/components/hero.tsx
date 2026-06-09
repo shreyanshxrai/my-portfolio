@@ -1,6 +1,13 @@
+"use client";
+import { useEffect } from 'react'
 import Image from "next/image";
+import {  useRouter } from "next/navigation";
 
 export default function Hero() {
+    const router = useRouter() ;
+  
+  
+
   return (
     <section className="flex min-h-[85vh] flex-col items-center justify-center gap-8 px-6 text-center">
       <Image
@@ -17,16 +24,16 @@ export default function Hero() {
         </h1>
 
         <p className="mx-auto max-w-2xl text-lg text-gray-400 md:text-xl">
-          I build end-to-end web applications with Next.js, React, Node.js, Express, Postgresql, and MongoDB, with a particular interest in backend systems and performance.
+          I build end-to-end web applications with Next.js, React, Node.js, Express, PostgreSQL, and MongoDB, with a particular interest in backend systems and performance.
         </p>
       </div>
 
       <div className="flex gap-4">
-        <button className="rounded-xl bg-white px-6 py-3 font-semibold text-black transition hover:scale-105">
+        <button className="rounded-xl bg-white px-6 py-3 font-semibold text-black transition hover:scale-105" onClick={() => router.push("/projects")}>
           View Projects
         </button>
 
-        <button className="rounded-xl border border-gray-700 px-6 py-3 transition hover:bg-gray-900">
+        <button className="rounded-xl border border-gray-700 px-6 py-3 transition hover:bg-gray-900" onClick={() => router.push("/contact")}>
           Contact Me
         </button>
       </div>
