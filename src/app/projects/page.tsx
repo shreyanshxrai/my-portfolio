@@ -49,9 +49,28 @@ const projects = [
       
     ],
     github:
-      "https://github.com/shreyanshxrai/my-portfolio"
+      "https://github.com/shreyanshxrai/my-portfolio",
+    live : "https://shreyanshraiportfolio.vercel.app/"  
     
   },
+  {
+    title: "Draftline",
+    description:
+      "A modern developer portfolio builder built using Next.js, TypeScript, Tailwind CSS.",
+    image: "/draftline.png",
+    tech: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      
+    ],
+    github:
+      "https://github.com/shreyanshxrai/draftline",
+   live : "https://draftline-shreyanshxrai.vercel.app/",   
+
+    
+  }
+
 ];
 
 export default function ProjectsPage() {
