@@ -4,20 +4,21 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 const projects = [
-    {
+  {
+    title: "PayGaurd - In Progress",
+    description:
+      "An AI-powered Paytm-like P2P payment app with fraud detection ",
+    image: "/paygaurd.png",
+    tech: ["Next.js", "TypeScript", "Tailwind CSS", "Express", "Turborepo"],
+    github: "https://github.com/shreyanshxrai/paygaurd",
+  },
+  {
     title: "Medium - Blogging Platform",
     description:
       "A full-stack blogging platform featuring authentication, article management, CRUD operations, and a responsive user experience.",
     image: "/blogging-platform.png",
-    tech: [
-      
-      "TypeScript",
-      "Node.js",
-      "Hono",
-      "PostgreSQL",
-    ],
-    github:
-      "https://github.com/shreyanshxrai/Medium",
+    tech: ["TypeScript", "Node.js", "Hono", "PostgreSQL"],
+    github: "https://github.com/shreyanshxrai/Medium",
     live: "https://medium-shreyanshxrai.vercel.app/",
   },
   {
@@ -25,52 +26,19 @@ const projects = [
     description:
       "Implemented JWT authentication, user accounts, balance tracking, and peer-to-peer transfers using REST APIs and MongoDB.",
     image: "/wallet.png",
-    tech: [
-    
-      "React",
-      "Node.js",
-      "Express",
-      "MongoDB",
-    ],
+    tech: ["React", "Node.js", "Express", "MongoDB"],
     github: "https://github.com/shreyanshxrai/Paytm",
   },
-
-  
 
   {
     title: "Portfolio Website",
     description:
       "A modern developer portfolio built using Next.js, TypeScript, Tailwind CSS.",
     image: "/portfolio.png",
-    tech: [
-      "Next.js",
-      "TypeScript",
-      "Tailwind CSS",
-      
-    ],
-    github:
-      "https://github.com/shreyanshxrai/my-portfolio",
-    live : "https://shreyanshraiportfolio.vercel.app/"  
-    
+    tech: ["Next.js", "TypeScript", "Tailwind CSS"],
+    github: "https://github.com/shreyanshxrai/my-portfolio",
+    live: "https://shreyanshraiportfolio.vercel.app/",
   },
-  {
-    title: "Draftline",
-    description:
-      "A modern developer portfolio builder built using Next.js, TypeScript, Tailwind CSS.",
-    image: "/draftline.png",
-    tech: [
-      "Next.js",
-      "TypeScript",
-      "Tailwind CSS",
-      
-    ],
-    github:
-      "https://github.com/shreyanshxrai/draftline",
-   live : "https://draftline-shreyanshxrai.vercel.app/",   
-
-    
-  }
-
 ];
 
 export default function ProjectsPage() {
@@ -82,14 +50,11 @@ export default function ProjectsPage() {
         transition={{ duration: 0.6 }}
         className="mb-16 text-center"
       >
-        <h1 className="mb-4 text-5xl font-bold">
-          Projects
-        </h1>
+        <h1 className="mb-4 text-5xl font-bold">Projects</h1>
 
         <p className="text-gray-500 dark:text-gray-400">
-          A collection of projects I've built while exploring
-          full-stack development, backend systems, and modern web
-          technologies.
+          A collection of projects I've built while exploring full-stack
+          development, backend systems, and modern web technologies.
         </p>
       </motion.div>
 
@@ -128,9 +93,7 @@ export default function ProjectsPage() {
             </div>
 
             <div className="p-6">
-              <h2 className="mb-3 text-2xl font-semibold">
-                {project.title}
-              </h2>
+              <h2 className="mb-3 text-2xl font-semibold">{project.title}</h2>
 
               <p className="mb-5 text-sm leading-7 text-gray-600 dark:text-gray-400">
                 {project.description}
@@ -205,4 +168,3 @@ export default function ProjectsPage() {
     </main>
   );
 }
-
