@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const projects = [
   {
-    title: "PayGaurd - In Progress",
+    title: "PayGaurd - Deployed , AI Integration[Pending]",
     description:
       "An AI-powered Paytm-like P2P payment app with fraud detection ",
     image: "/paygaurd.png",
