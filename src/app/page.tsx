@@ -1,8 +1,11 @@
 import Hero from "@/components/hero";
-import Image from "next/image";
+import TechStack from "@/components/techstack";
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <><div className=""><Hero/></div></>
+    <main id="main-content">
+      <Hero />
+      <TechStack />
+    </main>
   );
 }
